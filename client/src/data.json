@@ -1,0 +1,158 @@
+{
+    "docTitle": "Document Title",
+    "webTitle": "Title of the web",
+    "webDescription": "Description of the web",
+    "database": {
+        "host": "localhost",
+        "user": "root",
+        "port": "3000",
+        "MySQLPassword": "<your-password>",
+        "dbName": "my_database10",
+        "tableName": "my_table"
+    },
+    "inputs": [
+        {
+            "type": "text",
+            "name": "username",
+            "label": "Your username: ",
+            "required": true,
+            "placeholder": "Enter your username: ",
+            "validation": {
+                "upperCaseLetters": true,
+                "lowerCaseLetters": true,
+                "numbers": true,
+                "specialChars": ["_", "-"],
+                "minLength": 4,
+                "maxLength": 15
+            }
+        },
+        {
+            "type": "password",
+            "name": "password",
+            "label": "Your password: ",
+            "required": true,
+            "placeholder": "Enter your password: ",
+            "validation": {
+                "upperCaseLetters": true,
+                "lowerCaseLetters": true,
+                "numbers": true,
+                "specialChars": ["!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~"],
+                "minLength": 8,
+                "maxLength": 15
+            }
+        },
+        {
+            "type": "radio",
+            "name": "gender",
+            "label": "Your gender: ",
+            "required": false,
+            "options": [
+                {
+                    "value": "M",
+                    "label": "Male"
+                },
+                {
+                    "value": "F",
+                    "label": "Female"
+                },
+                {
+                    "value": "O",
+                    "label": "Other"
+                }
+            ]
+        },
+        {
+            "type": "checkbox",
+            "name": "drivingLicense",
+            "label": "Do you have a driving license? "
+        },
+        {
+            "type": "color",
+            "name": "color",
+            "label": "Your favourite color: "
+        },
+        {
+            "type": "date",
+            "name": "birthdate",
+            "label": "Your birth date: ",
+            "required": false
+        },
+        {
+            "type": "datetime-local",
+            "name": "workStart",
+            "label": "When do you want to make the party? ",
+            "required": false
+        },
+        {
+            "type": "email",
+            "name": "email",
+            "label": "Your email: ",
+            "required": false,
+            "placeholder": "example@gmail.com"
+        },
+        {
+            "type": "file",
+            "name": "curriculum",
+            "label": "Enter your curriculum (doc/video/audio): ",
+            "required": false
+        },
+        {
+            "type": "month",
+            "name": "startDate",
+            "label": "When can you start working? ",
+            "required": false
+        },
+        {
+            "type": "week",
+            "name": "startWeek",
+            "label": "Week you can start to work: ",
+            "required": false
+        },
+        {
+            "type": "number",
+            "name": "age",
+            "label": "Your age: ",
+            "required": false,
+            "min": 18,
+            "max": 72,
+            "step": 1
+        },
+        {
+            "type": "range",
+            "name": "happiness",
+            "label": "Your overall happiness: ",
+            "min": 0,
+            "max": 10
+        },
+        {
+            "type": "tel",
+            "name": "phone",
+            "label": "Enter your phone number: ",
+            "required": false,
+            "placeholder": "+34-123-456-789"
+        },
+        {
+            "type": "time",
+            "name": "startHour",
+            "label": "Hour you can start to work: ",
+            "required": false
+        },
+        {
+            "type": "url",
+            "name": "website",
+            "label": "Enter your twitter account: ",
+            "placeholder": "https://twitter.com/username",
+            "required": false
+        },
+        {
+            "type": "textarea",
+            "name": "description",
+            "label": "Describe yourself: ",
+            "required": false,
+            "rows": 4,
+            "cols": 50,
+            "maxLength": 500,
+            "placeholder": "Enter your description: "
+        }
+    ]
+}
